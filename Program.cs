@@ -1,8 +1,11 @@
-﻿
+﻿Console.WriteLine(Fibonacci(10));
 
 static int Fibonacci(int n)
 {
-    int n1 = 0;
-    int n2 = 1;
-    int sum;
+    if (n == 0 || n == 1)
+    {
+        return n;
+    }
+    else
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
 }
